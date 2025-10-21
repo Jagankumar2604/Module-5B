@@ -14,19 +14,18 @@ To write a **NumPy** program that sorts the elements in each column of a given 2
 ## 🧾 Program
 ```
 import numpy as np
-array = np.array([
-    [4,5,6],
-    [1,2,3],
-    [7,8,9]
-])
+a=np.array(eval(input()))
+print("Given array ")
+b=np.sort(a, axis=0)
+print(f" {a}")
+print("")
+print(b)
 
-sorted_columns = np.sort(array, axis=0)
-print("Original 2D Array:\n", array)
-print("\nColumn-wise Sorted Array:\n", sorted_columns)
 ```
 
 ## Output
-<img width="1437" height="393" alt="image" src="https://github.com/user-attachments/assets/988a1e91-611a-4df3-8888-a955e5c87a4d" />
+<img width="751" height="645" alt="502987942-c018d95c-06c3-4122-9751-2227e4e67579" src="https://github.com/user-attachments/assets/4b9193e8-0f00-4e6c-bac7-23743f52a730" />
+
 
 
 ## Result
