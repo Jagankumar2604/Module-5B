@@ -19,21 +19,22 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 ## 💻 Program
 ```
 import pandas as pd
-exam_data = {
-    'name': ['vijay', 'Joseph', 'priya', 'Ravi', 'Nila', 'Arjun', 'ajith', 'suriya'],
-    'score': [100, 95, 98, 25, 29, 100, 80,70],
-    'attempts': [1, 3, 2, 3, 2, 3, 1, 1],
-    'qualify': ['yes', 'yes', 'yes', 'no', 'no', 'yes', 'yes', 'yes']
+import numpy as np
+data = {
+    'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 
+             'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
+    'score': [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],
+    'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+    'qualify': ['yes', 'no', 'yes', 'no', 'no', 
+                'yes', 'yes', 'no', 'no', 'yes']
 }
-
-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-
-df = pd.DataFrame(exam_data, index=labels)
-print("Exam Results DataFrame:\n")
+labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+df = pd.DataFrame(data, index=labels)
 print(df)
 ```
 ## Output
-<img width="1405" height="488" alt="image" src="https://github.com/user-attachments/assets/bcada80d-f7d4-469f-b9c2-8b62bb1ad995" />
+<img width="1201" height="528" alt="502988359-3faa4293-5119-49ad-8dc0-9fd10fcbd625" src="https://github.com/user-attachments/assets/a010338f-c25c-4383-858f-fd622fc33143" />
+
 
 
 ## Result
