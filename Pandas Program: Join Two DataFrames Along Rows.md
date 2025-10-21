@@ -19,26 +19,22 @@ To write a Python program using Pandas to **join two DataFrames along rows** (ro
 ## 💻 Program
 ```
 import pandas as pd
-student_data1 = {
-    'name': ['vijay','ajith', 'dhanush'],
-    'score': [85, 90, 88]
-}
-df1 = pd.DataFrame(student_data1)
+a=pd.DataFrame(eval(input()))
+b=pd.DataFrame(eval(input()))
+print("Original DataFrames:")
+print(a)
+print("-------------------------------------")
+print(b)
+print()
+print("Join the said two dataframes along columns:")
+c=pd.concat([a,b],axis=1)
+print(c)
 
-student_data2 = {
-    'name': ['suriya', 'ragavan', 'bala'],
-    'score': [95, 100, 95]
-}
-df2 = pd.DataFrame(student_data2)
-
-combined_df = pd.concat([df1, df2], axis=0)
-print("Combined Student DataFrame (Row-wise Join):\n")
-print(combined_df)
 ```
 
 ## Output
-<img width="1492" height="516" alt="image" src="https://github.com/user-attachments/assets/189545b3-61b5-4431-b539-ae4d9fbf4378" />
+<img width="1219" height="890" alt="502988469-b3239bd9-ae7d-428a-bd97-5f77dea127d5" src="https://github.com/user-attachments/assets/b8db3891-1083-46bc-bc31-9e8053450639" />
 
 
 ## Result
-Thus,the above python program is executed successfully.
+Thus,the Python program using Pandas to join two DataFrames along rows (row-wise concatenation) and assign all data to a new DataFrame is created successfully.
