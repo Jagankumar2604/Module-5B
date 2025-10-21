@@ -38,4 +38,4 @@ print(df)
 
 
 ## Result
-Thus,the python program is executed successfully.
+Thus,the Python program create and display a DataFrame using the Pandas library in Python from a given dictionary, and apply specific index labels to the rows is created successfully.
